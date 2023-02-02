@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 12:04:09</sys_created_on>
+        <sys_id>0efebd749738e9d0898cb4b0f053afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign to me.admin</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_ui_action display_value="Assign to me">d495a53497f0e9d0898cb4b0f053af12</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_0efebd749738e9d0898cb4b0f053afe0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 12:04:09</sys_updated_on>
+        <sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</application>
+        <file_path/>
+        <instance_id>ff71596adb01995c3050ac44d496194e</instance_id>
+        <instance_name>lucatokyodemo</instance_name>
+        <name>sys_ui_action_role_0efebd749738e9d0898cb4b0f053afe0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-01 12:04:09</sys_created_on><sys_id>0efebd749738e9d0898cb4b0f053afe0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Assign to me.admin</sys_name><sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package><sys_policy/><sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope><sys_ui_action display_value="Assign to me">d495a53497f0e9d0898cb4b0f053af12</sys_ui_action><sys_update_name>sys_ui_action_role_0efebd749738e9d0898cb4b0f053afe0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-01 12:04:09</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>1465880739</payload_hash>
+        <record_name>Assign to me.admin</record_name>
+        <reverted_from/>
+        <source>9f86dc5497f4e1d0898cb4b0f053aff0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 12:04:09</sys_created_on>
+        <sys_id>8c5f7df49738e9d0898cb4b0f053afcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1860cdce7a40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 12:04:09</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>445f7df40a38e9d0cdd734d8569f1acf</update_guid>
+        <update_guid_history>445f7df40a38e9d0cdd734d8569f1acf:1465880739</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 12:06:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>182f51beda414c10ba6c1ce8fdfd3b90</sys_id>
+        <sys_metadata>0efebd749738e9d0898cb4b0f053afe0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign to me.admin</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_scope_delete display_value="">3f73608456a544699fd363c40ac00961</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_0efebd749738e9d0898cb4b0f053afe0</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_0efebd749738e9d0898cb4b0f053afe0">8c5f7df49738e9d0898cb4b0f053afcf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 12:06:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

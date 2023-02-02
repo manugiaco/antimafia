@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_registry_m2m_category">
+    <sys_ux_registry_m2m_category action="DELETE">
+        <experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category>
+        <page_registry display_value="">d3077f5023f0a5d03a77389d96912194</page_registry>
+        <sys_class_name>sys_ux_registry_m2m_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 07:30:21</sys_created_on>
+        <sys_id>9b077f509af0a5d0b3f784cc7d6cee91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_registry_m2m_category_9b077f509af0a5d0b3f784cc7d6cee91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 07:30:21</sys_updated_on>
+    </sys_ux_registry_m2m_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</application>
+        <file_path/>
+        <instance_id>ff71596adb01995c3050ac44d496194e</instance_id>
+        <instance_name>lucatokyodemo</instance_name>
+        <name>sys_ux_registry_m2m_category_9b077f509af0a5d0b3f784cc7d6cee91</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_registry_m2m_category"><sys_ux_registry_m2m_category action="INSERT_OR_UPDATE"><experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category><page_registry display_value="">d3077f5023f0a5d03a77389d96912194</page_registry><sys_class_name>sys_ux_registry_m2m_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-31 07:30:21</sys_created_on><sys_id>9b077f509af0a5d0b3f784cc7d6cee91</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package><sys_policy/><sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope><sys_update_name>sys_ux_registry_m2m_category_9b077f509af0a5d0b3f784cc7d6cee91</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-31 07:30:21</sys_updated_on></sys_ux_registry_m2m_category></record_update>]]></payload>
+        <payload_hash>782759869</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>47db349247202110ba30e7e8036d43a4</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-01-24 12:44:38</sys_created_on>
+        <sys_id>7f7e356097f029d0898cb4b0f053af0a</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>185e3cf16f00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Application Category M2M</type>
+        <update_guid>3f7e3560d2f029d0f56097b89f9af10a</update_guid>
+        <update_guid_history>3f7e3560d2f029d0f56097b89f9af10a:782759869</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 17:22:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_registry_m2m_category">sys_ux_registry_m2m_category</sys_db_object>
+        <sys_id>5c896112fefc4752a6750528b8896e71</sys_id>
+        <sys_metadata>9b077f509af0a5d0b3f784cc7d6cee91</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_scope_delete display_value="">3f73608456a544699fd363c40ac00961</sys_scope_delete>
+        <sys_update_name>sys_ux_registry_m2m_category_9b077f509af0a5d0b3f784cc7d6cee91</sys_update_name>
+        <sys_update_version display_value="sys_ux_registry_m2m_category_9b077f509af0a5d0b3f784cc7d6cee91">7f7e356097f029d0898cb4b0f053af0a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 17:22:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

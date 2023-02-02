@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record Information">d7077f50b4f0a5d0fc55bcd07ecc4c8c</macroponent>
+        <name>ribbon___isHidden__</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/** * @param {params} params * @param {api} params.api * @param {any} params.imports */
+function evaluateProperty({
+    api
+}) {
+    const loc = api.context.app.ribbonLocation;
+    if (typeof loc === 'undefined') {
+        loc = 'sidebar';
+    }
+    return (loc !== 'sidebar') || (api.context.app.ribbonLocation !== 'sidebar') || (typeof api.context.app.ribbonConfigId === 'undefined') || api.state.isLoading;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 07:30:20</sys_created_on>
+        <sys_id>db077f506af0a5d0fd2a513d45e9568f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ribbon___isHidden__</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_client_script_db077f506af0a5d0fd2a513d45e9568f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 07:30:20</sys_updated_on>
+        <target/>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

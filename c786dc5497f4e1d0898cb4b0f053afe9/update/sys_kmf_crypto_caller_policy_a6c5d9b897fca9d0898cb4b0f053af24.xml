@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="cm_rmt_help_data_view AES-128">dec591b897fca9d0898cb4b0f053af88</crypto_module>
+        <crypto_spec/>
+        <granular_operation/>
+        <identity_group_alias/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>ff71596adb01995c3050ac44d496194e</owner>
+        <policy_name>mod_rmt_help_data_view_sn_ind_rmt_help.viewer</policy_name>
+        <result>track</result>
+        <script_hash/>
+        <script_table/>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 09:02:43</sys_created_on>
+        <sys_id>a6c5d9b897fca9d0898cb4b0f053af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_a6c5d9b897fca9d0898cb4b0f053af24</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 09:02:43</sys_updated_on>
+        <target_role display_value="sn_ind_rmt_help.viewer" name="sn_ind_rmt_help.viewer">05b26731b7d710103755d4a1de11a9ca</target_role>
+        <target_scope display_value="Global">global</target_scope>
+        <target_script/>
+        <type>2</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+</record_update>

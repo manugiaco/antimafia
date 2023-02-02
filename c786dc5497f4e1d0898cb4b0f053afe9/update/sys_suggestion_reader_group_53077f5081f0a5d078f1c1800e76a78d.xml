@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id display_value="Modulo Antimafia AI Search Configuration">1f077f5080f0a5d033f4c7732927e78e</context_config_id>
+        <limit>5</limit>
+        <order>500</order>
+        <section_header>Recently viewed</section_header>
+        <suggestion_type>User History Reader Group for Starter Workspace AI Search Configuration</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 07:30:21</sys_created_on>
+        <sys_id>53077f5081f0a5d078f1c1800e76a78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User History Reader Group for Starter Workspace AI Search Configuration</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_53077f5081f0a5d078f1c1800e76a78d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 07:30:21</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

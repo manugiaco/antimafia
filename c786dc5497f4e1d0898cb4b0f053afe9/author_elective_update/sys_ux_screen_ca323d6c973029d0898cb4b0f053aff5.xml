@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Modulo Antimafia Config">5b077f504cf0a5d0edca2c9d8226eb94</app_config>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="Dashboards">163a913b532c0110aab9ddeeff7b1241</macroponent>
+        <macroponent_config>{ }</macroponent_config>
+        <name>HomePage</name>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Home">df077f50f7f0a5d003152fbd15955c93</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 16:28:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ca323d6c973029d0898cb4b0f053aff5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HomePage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_screen_ca323d6c973029d0898cb4b0f053aff5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 16:28:28</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=ca323d6c973029d0898cb4b0f053aff5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</application>
+        <file_path/>
+        <instance_id>ff71596adb01995c3050ac44d496194e</instance_id>
+        <instance_name>lucatokyodemo</instance_name>
+        <name>sys_ux_screen_ca323d6c973029d0898cb4b0f053aff5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Modulo Antimafia Config">5b077f504cf0a5d0edca2c9d8226eb94</app_config><description/><event_mappings/><macroponent display_value="Dashboards">163a913b532c0110aab9ddeeff7b1241</macroponent><macroponent_config>{ }</macroponent_config><name>HomePage</name><order>0</order><parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Home">df077f50f7f0a5d003152fbd15955c93</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-31 16:28:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ca323d6c973029d0898cb4b0f053aff5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>HomePage</sys_name><sys_overrides/><sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package><sys_policy/><sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope><sys_update_name>sys_ux_screen_ca323d6c973029d0898cb4b0f053aff5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-31 16:28:28</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=ca323d6c973029d0898cb4b0f053aff5"/></record_update>]]></payload>
+        <payload_hash>-93157245</payload_hash>
+        <record_name>HomePage</record_name>
+        <reverted_from/>
+        <source>9f86dc5497f4e1d0898cb4b0f053aff0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 16:28:28</sys_created_on>
+        <sys_id>ce323d6c973029d0898cb4b0f053aff8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18608a889370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 16:28:28</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>86323d6c8d3029d07ac816be5bd2f1f8</update_guid>
+        <update_guid_history>86323d6c8d3029d07ac816be5bd2f1f8:-93157245</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 16:28:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>9e005294d92544de91af605548ed5344</sys_id>
+        <sys_metadata>ca323d6c973029d0898cb4b0f053aff5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HomePage</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_scope_delete display_value="">3f73608456a544699fd363c40ac00961</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_ca323d6c973029d0898cb4b0f053aff5</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_ca323d6c973029d0898cb4b0f053aff5">ce323d6c973029d0898cb4b0f053aff8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 16:28:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

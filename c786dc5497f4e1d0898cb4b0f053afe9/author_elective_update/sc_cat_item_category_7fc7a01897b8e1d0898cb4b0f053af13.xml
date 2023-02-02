@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Richiesta del Certificato Antimafia">aa822c949778e1d0898cb4b0f053af93</sc_cat_item>
+        <sc_category display_value="Vendor Services">705713b36cd82010f8773287f624304a</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 16:24:52</sys_created_on>
+        <sys_id>7fc7a01897b8e1d0898cb4b0f053af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Services.Richiesta del Certificato Antimafia</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sc_cat_item_category_7fc7a01897b8e1d0898cb4b0f053af13</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-30 16:24:52</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</application>
+        <file_path/>
+        <instance_id>ff71596adb01995c3050ac44d496194e</instance_id>
+        <instance_name>lucatokyodemo</instance_name>
+        <name>sc_cat_item_category_7fc7a01897b8e1d0898cb4b0f053af13</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Richiesta del Certificato Antimafia">aa822c949778e1d0898cb4b0f053af93</sc_cat_item><sc_category display_value="Vendor Services">705713b36cd82010f8773287f624304a</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-30 16:24:52</sys_created_on><sys_id>7fc7a01897b8e1d0898cb4b0f053af13</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Vendor Services.Richiesta del Certificato Antimafia</sys_name><sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package><sys_policy/><sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope><sys_update_name>sc_cat_item_category_7fc7a01897b8e1d0898cb4b0f053af13</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-30 16:24:52</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>298388152</payload_hash>
+        <record_name>Vendor Services.Richiesta del Certificato Antimafia</record_name>
+        <reverted_from/>
+        <source>9f86dc5497f4e1d0898cb4b0f053aff0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 16:24:52</sys_created_on>
+        <sys_id>fbc7a01897b8e1d0898cb4b0f053af17</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186037ee1f40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-30 16:24:52</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>33c7a01813b8e1d0052ed259a5419217</update_guid>
+        <update_guid_history>33c7a01813b8e1d0052ed259a5419217:298388152</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Vendor Services.Richiesta del Certificato Antimafia">cb18e81897b8e1d0898cb4b0f053afa0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 16:26:11</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>040066c3b041491697e3e9a5bd6bd369</sys_id>
+        <sys_metadata>7fc7a01897b8e1d0898cb4b0f053af13</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vendor Services.Richiesta del Certificato Antimafia</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_scope_delete display_value="">3f73608456a544699fd363c40ac00961</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_7fc7a01897b8e1d0898cb4b0f053af13</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_7fc7a01897b8e1d0898cb4b0f053af13">fbc7a01897b8e1d0898cb4b0f053af17</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-30 16:26:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

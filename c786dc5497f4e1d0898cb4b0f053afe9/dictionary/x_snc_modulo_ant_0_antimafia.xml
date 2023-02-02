@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="8d0d5e7497fce9d0898cb4b0f053af4d" extends="task" label="Antimafia" max_length="40" name="x_snc_modulo_ant_0_antimafia" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Contract Number" max_length="40" name="contract_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract Start Date" max_length="40" name="contract_start_date" type="glide_date"/>
+        <element label="Contract Value" max_length="40" name="contract_value" type="currency"/>
+    </element>
+</database>

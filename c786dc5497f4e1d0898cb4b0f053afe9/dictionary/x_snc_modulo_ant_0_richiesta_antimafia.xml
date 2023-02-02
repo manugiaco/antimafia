@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="0cc9d45c97f4e1d0898cb4b0f053af59" label="Richiesta antimafia" max_length="40" name="x_snc_modulo_ant_0_richiesta_antimafia" text_index="true" type="collection">
+        <element label="Assigned Group" max_length="32" name="assigned_group" reference="sys_user_group" type="reference"/>
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUser();" label="Buyer" max_length="32" name="buyer" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="40" name="comments" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract Number" max_length="40" name="contract_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract Start Date" max_length="40" name="contract_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Details" max_length="4000" name="details" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="In progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Closed" sequence="2" value="closed"/>
+            </choice>
+        </element>
+        <element label="Vendor" max_length="32" name="vendor" reference="core_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="40" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="assigned_group"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index3">
+            <element name="buyer"/>
+        </index>
+        <index name="index4">
+            <element name="vendor"/>
+        </index>
+    </element>
+</database>

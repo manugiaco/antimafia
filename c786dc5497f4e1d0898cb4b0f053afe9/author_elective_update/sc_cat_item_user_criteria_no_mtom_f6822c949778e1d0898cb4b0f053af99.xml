@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Richiesta del Certificato Antimafia">aa822c949778e1d0898cb4b0f053af93</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 16:01:51</sys_created_on>
+        <sys_id>f6822c949778e1d0898cb4b0f053af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Richiesta del Certificato Antimafia.SNC External</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_f6822c949778e1d0898cb4b0f053af99</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-30 16:01:51</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</application>
+        <file_path/>
+        <instance_id>ff71596adb01995c3050ac44d496194e</instance_id>
+        <instance_name>lucatokyodemo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_f6822c949778e1d0898cb4b0f053af99</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Richiesta del Certificato Antimafia">aa822c949778e1d0898cb4b0f053af93</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-01-30 16:01:51</sys_created_on><sys_id>f6822c949778e1d0898cb4b0f053af99</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Richiesta del Certificato Antimafia.SNC External</sys_name><sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package><sys_policy/><sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_f6822c949778e1d0898cb4b0f053af99</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-01-30 16:01:51</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>220975144</payload_hash>
+        <record_name>Richiesta del Certificato Antimafia.SNC External</record_name>
+        <reverted_from/>
+        <source>47db349247202110ba30e7e8036d43a4</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-01-24 12:44:38</sys_created_on>
+        <sys_id>3bfaf4d097bce1d0898cb4b0f053afaa</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>185e3cf16f00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>f7faf4d09cbce1d076adbd38dde7c5aa</update_guid>
+        <update_guid_history>f7faf4d09cbce1d076adbd38dde7c5aa:220975144</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Richiesta del Certificato Antimafia.SNC External">3ffaf4d097bce1d0898cb4b0f053afad</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 17:48:43</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>8ecf6cbe5cfe4c78a1209cea3b2de4e9</sys_id>
+        <sys_metadata>f6822c949778e1d0898cb4b0f053af99</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Richiesta del Certificato Antimafia.SNC External</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_scope_delete display_value="">3f73608456a544699fd363c40ac00961</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_f6822c949778e1d0898cb4b0f053af99</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_f6822c949778e1d0898cb4b0f053af99">3bfaf4d097bce1d0898cb4b0f053afaa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-30 17:48:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

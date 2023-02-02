@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Chiusura automatica della richiesta</description>
+        <internal_name>antimafia_autoclosed</internal_name>
+        <label_cache>[{"name":"cda869ee-2a6b-4804-b7e6-fddd0a6960df.__dont_treat_as_error__","label":"8 - Copy Attachment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cda869ee-2a6b-4804-b7e6-fddd0a6960df.__action_status__","label":"8 - Copy Attachment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Antimafia Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_modulo_ant_0_antimafia","column_name":"sys_id"},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛Antimafia Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Antimafia Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_modulo_ant_0_antimafia","column_name":"opened_by"},{"name":"b8ade21b-7c90-4ec1-94d9-e24e3d44dab9.__dont_treat_as_error__","label":"10 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b8ade21b-7c90-4ec1-94d9-e24e3d44dab9.__action_status__","label":"10 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b8ade21b-7c90-4ec1-94d9-e24e3d44dab9.email","label":"10 - Send Email➛email","reference":"sys_email","reference_display":"email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d6b07b03-0c69-445d-aa93-60c2d08983c6.__dont_treat_as_error__","label":"7 - Look Up Attachment➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d6b07b03-0c69-445d-aa93-60c2d08983c6.__action_status__","label":"7 - Look Up Attachment➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d6b07b03-0c69-445d-aa93-60c2d08983c6.parameter1","label":"7 - Look Up Attachment➛Attachment List","reference_display":"Attachment List","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b98a00d2-8da9-4ed7-a5e3-24bc4ea711f3"}},{"name":"d6b07b03-0c69-445d-aa93-60c2d08983c6.parameter","label":"7 - Look Up Attachment➛Attachment Sys ID","reference_display":"Attachment Sys ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b143af44-a3d5-4f5f-9429-760e819835ec"}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Antimafia Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_modulo_ant_0_antimafia","column_name":"number"},{"name":"ec917d1e-ca36-46bc-8ec6-5274bc5b6e30.__dont_treat_as_error__","label":"3 - Post a Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ec917d1e-ca36-46bc-8ec6-5274bc5b6e30.__action_status__","label":"3 - Post a Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Antimafia Record","reference":"x_snc_modulo_ant_0_antimafia","reference_display":"Antimafia","type":"reference","base_type":"reference","attributes":{}},{"name":"514a6c9d-f363-49c8-be81-7b2ba1ae1bd8.__dont_treat_as_error__","label":"2 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"514a6c9d-f363-49c8-be81-7b2ba1ae1bd8.__action_status__","label":"2 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"514a6c9d-f363-49c8-be81-7b2ba1ae1bd8.table_name","label":"2 - Update Record➛Antimafia Table","reference":"x_snc_modulo_ant_0_antimafia","reference_display":"Antimafia Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"514a6c9d-f363-49c8-be81-7b2ba1ae1bd8.record","label":"2 - Update Record➛Antimafia Record","reference":"x_snc_modulo_ant_0_antimafia","reference_display":"Antimafia Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.contract_value","label":"Trigger - Record Created➛Antimafia Record➛Contract Value","reference":"","reference_display":"Contract Value","type":"currency","base_type":"currency","parent_table_name":"x_snc_modulo_ant_0_antimafia","column_name":"contract_value"},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.Record","label":"4 - Look Up Record➛Nullaosta Antimafia Record","reference":"x_snc_modulo_ant_0_nullaosta_antimafia","reference_display":"Nullaosta Antimafia Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.Table","label":"4 - Look Up Record➛Nullaosta Antimafia Table","reference":"x_snc_modulo_ant_0_nullaosta_antimafia","reference_display":"Nullaosta Antimafia Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.status","label":"4 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.error_message","label":"4 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.__action_status__","label":"4 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.__dont_treat_as_error__","label":"4 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.company","label":"Trigger - Record Created➛Antimafia Record➛Vendor","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"x_snc_modulo_ant_0_antimafia","column_name":"company"},{"name":"2e6aae3b-452b-4706-91e6-543f0b319216.Record.expires_on","label":"4 - Look Up Record➛Nullaosta Antimafia Record➛Expires on","reference":"","reference_display":"Expires on","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_modulo_ant_0_nullaosta_antimafia","column_name":"expires_on"},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Antimafia Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_modulo_ant_0_antimafia","column_name":"sys_created_on"},{"name":"fa32e30c-4488-47e6-959d-cdd90a681a26.status","label":"6 - Update Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":0.0},{"label":"Error","value":"Error","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"de724257-e1d2-4d67-8f9a-288a9b034117"}},{"name":"fa32e30c-4488-47e6-959d-cdd90a681a26.error_message","label":"6 - Update Record➛Error Message","reference_display":"Error Message","type":"choice","base_type":"choice","choices":[{"label":"Invalid credentials","value":"Invalid credentials","order":0.0},{"label":"Other Error","value":"Encountered an error. Check log for more details","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"choice","uiUniqueId":"7f481405-329b-4729-9e31-2e32caeecbff"}},{"name":"fa32e30c-4488-47e6-959d-cdd90a681a26.log","label":"6 - Update Record➛Log","reference_display":"Log","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"a2c86a2e-6a14-466e-84f8-38092775cd51"}},{"name":"fa32e30c-4488-47e6-959d-cdd90a681a26.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"fa32e30c-4488-47e6-959d-cdd90a681a26.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"bdf98bc9-f6dd-4ebc-ac32-87c7f89874de.record","label":"7 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bdf98bc9-f6dd-4ebc-ac32-87c7f89874de.table_name","label":"7 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bdf98bc9-f6dd-4ebc-ac32-87c7f89874de.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bdf98bc9-f6dd-4ebc-ac32-87c7f89874de.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"e3bcb73d-b7db-4a73-82f8-bd153d7fcaf0.record","label":"6 - Update Record➛Antimafia Record","reference":"x_snc_modulo_ant_0_antimafia","reference_display":"Antimafia Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e3bcb73d-b7db-4a73-82f8-bd153d7fcaf0.table_name","label":"6 - Update Record➛Antimafia Table","reference":"x_snc_modulo_ant_0_antimafia","reference_display":"Antimafia Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e3bcb73d-b7db-4a73-82f8-bd153d7fcaf0.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e3bcb73d-b7db-4a73-82f8-bd153d7fcaf0.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76868266-7b1d-45fa-a8f0-cfc195f11551.__action_status__","label":"9 - Post a Message➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76868266-7b1d-45fa-a8f0-cfc195f11551.__dont_treat_as_error__","label":"9 - Post a Message➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.company.name","label":"Trigger - Record Created➛Antimafia Record➛Vendor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"core_company","column_name":"name"},{"name":"d34915e3-c90c-4ac7-83c1-2af21676a138.Record","label":"7 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d34915e3-c90c-4ac7-83c1-2af21676a138.Table","label":"7 - Look Up Record➛Attachment Table","reference":"sys_attachment","reference_display":"Attachment Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d34915e3-c90c-4ac7-83c1-2af21676a138.status","label":"7 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d34915e3-c90c-4ac7-83c1-2af21676a138.error_message","label":"7 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d34915e3-c90c-4ac7-83c1-2af21676a138.__action_status__","label":"7 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"d34915e3-c90c-4ac7-83c1-2af21676a138.__dont_treat_as_error__","label":"7 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Antimafia auto-closed</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:24:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>49da3a7497742dd0898cb4b0f053af85</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Antimafia auto-closed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_hub_flow_49da3a7497742dd0898cb4b0f053af85</sys_update_name>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_variable_value action="delete_multiple" query="document_key=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=49da3a7497742dd0898cb4b0f053af85^sys_idNOT INc93dbaf897742dd0898cb4b0f053af61"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>c93dbaf897742dd0898cb4b0f053af61</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c93dbaf897742dd0898cb4b0f053af61"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c93dbaf897742dd0898cb4b0f053af61</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>0d3dbaf897742dd0898cb4b0f053af62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c93dbaf897742dd0898cb4b0f053af61</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>853dbaf897742dd0898cb4b0f053af63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <value>x_snc_modulo_ant_0_antimafia</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=49da3a7497742dd0898cb4b0f053af85^sys_idNOT IN8dda3a7497742dd0898cb4b0f053af87"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>49da3a7497742dd0898cb4b0f053af85</id>
+        <name>Antimafia auto-closed</name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:24:11</sys_created_on>
+        <sys_id>8dda3a7497742dd0898cb4b0f053af87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:24:11</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8dda3a7497742dd0898cb4b0f053af87"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=49da3a7497742dd0898cb4b0f053af85^sys_idNOT IN093dbaf897742dd0898cb4b0f053af5b,fc3dbaf897742dd0898cb4b0f053af55"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</model>
+        <model_id>49da3a7497742dd0898cb4b0f053af85</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_49da3a7497742dd0898cb4b0f053af85</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>093dbaf897742dd0898cb4b0f053af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</model>
+        <model_id>49da3a7497742dd0898cb4b0f053af85</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_49da3a7497742dd0898cb4b0f053af85</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:32</sys_created_on>
+        <sys_id>fc3dbaf897742dd0898cb4b0f053af55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=49da3a7497742dd0898cb4b0f053af85^sys_idNOT IN535dcffc97382dd0898cb4b0f053af20,7b04c37497f42dd0898cb4b0f053af4c,853dbaf897742dd0898cb4b0f053af6e,893dbaf897742dd0898cb4b0f053af80,b704c37497f42dd0898cb4b0f053af9b,d75dcffc97382dd0898cb4b0f053af2c,d7a6133097f82dd0898cb4b0f053af4d,ff04c37497f42dd0898cb4b0f053af89"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Attachment">30fe6cdb0f973300dfd3694e68767e5a</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>8</order>
+        <parent_ui_id>3d0120c3-fc1e-4dda-ad4a-95d4a3aba408</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>535dcffc97382dd0898cb4b0f053af20</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>cda869ee-2a6b-4804-b7e6-fddd0a6960df</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=535dcffc97382dd0898cb4b0f053af20"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>535dcffc97382dd0898cb4b0f053af20</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>135dcffc97382dd0898cb4b0f053af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <value>x_snc_modulo_ant_0_antimafia</value>
+        <variable display_value="Table">f4fe6cdb0f973300dfd3694e68767e67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>535dcffc97382dd0898cb4b0f053af20</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>5b5dcffc97382dd0898cb4b0f053af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <value/>
+        <variable display_value="Target Record">b0fe6cdb0f973300dfd3694e68767e60</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=535dcffc97382dd0898cb4b0f053af20"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_record</field>
+        <id>535dcffc97382dd0898cb4b0f053af20</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>9f5dcffc97382dd0898cb4b0f053af21</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value>{{d34915e3-c90c-4ac7-83c1-2af21676a138.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>535dcffc97382dd0898cb4b0f053af20</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>1b5dcffc97382dd0898cb4b0f053af21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>535dcffc97382dd0898cb4b0f053af20</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>db5dcffc97382dd0898cb4b0f053af21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=535dcffc97382dd0898cb4b0f053af20"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=535dcffc97382dd0898cb4b0f053af20"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7b04c37497f42dd0898cb4b0f053af4c</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>2e6aae3b-452b-4706-91e6-543f0b319216</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7b04c37497f42dd0898cb4b0f053af4c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7b04c37497f42dd0898cb4b0f053af4c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7704c37497f42dd0898cb4b0f053af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <value>x_snc_modulo_ant_0_nullaosta_antimafia</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7b04c37497f42dd0898cb4b0f053af4c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7b04c37497f42dd0898cb4b0f053af4c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>3f04c37497f42dd0898cb4b0f053af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>vendor={{Created_1.current.company}}^status=valid</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7b04c37497f42dd0898cb4b0f053af4c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>f304c37497f42dd0898cb4b0f053af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7b04c37497f42dd0898cb4b0f053af4c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7b04c37497f42dd0898cb4b0f053af4c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>2</order>
+        <parent_ui_id>5abb3bf3-8be0-476f-8d84-a5748202810b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>853dbaf897742dd0898cb4b0f053af6e</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>514a6c9d-f363-49c8-be81-7b2ba1ae1bd8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=853dbaf897742dd0898cb4b0f053af6e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>853dbaf897742dd0898cb4b0f053af6e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>013dbaf897742dd0898cb4b0f053af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <value>state=7^work_notes=Richiesta chiusa automaticamente: il valore dell'ordine/contratto è inferiore alla soglia per la quale è richiesto il nullaosta Antimafia.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>853dbaf897742dd0898cb4b0f053af6e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>c13dbaf897742dd0898cb4b0f053af71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <value>x_snc_modulo_ant_0_antimafia</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=853dbaf897742dd0898cb4b0f053af6e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>853dbaf897742dd0898cb4b0f053af6e</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>c93dbaf897742dd0898cb4b0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>853dbaf897742dd0898cb4b0f053af6e</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>093dbaf897742dd0898cb4b0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>853dbaf897742dd0898cb4b0f053af6e</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>8d3dbaf897742dd0898cb4b0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=853dbaf897742dd0898cb4b0f053af6e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=853dbaf897742dd0898cb4b0f053af6e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>3</order>
+        <parent_ui_id>5abb3bf3-8be0-476f-8d84-a5748202810b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>893dbaf897742dd0898cb4b0f053af80</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>ec917d1e-ca36-46bc-8ec6-5274bc5b6e30</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=893dbaf897742dd0898cb4b0f053af80"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>893dbaf897742dd0898cb4b0f053af80</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>c53dbaf897742dd0898cb4b0f053af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <value>https://servicenow.webhook.office.com/webhookb2/4ac0d0f6-1ff8-4aae-81a1-9afd3ee4c916@8bcff170-9979-491e-8683-d8ced0850bad/IncomingWebhook/d775f081b23e48c4a15763f74f1d281a/086efc19-7cdb-49a2-a60b-d13866c06a0d</value>
+        <variable display_value="Webhook URL">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=893dbaf897742dd0898cb4b0f053af80"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>893dbaf897742dd0898cb4b0f053af80</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>cd3dbaf897742dd0898cb4b0f053af82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>La richiesta n. {{Created_1.current.number}} è stata automaticamente chiusa poiché non l'ammontare dell'ordine/contratto è inferiore alla soglia per la quale è richiesto il certificato Antimafia.
+Puoi procedere con l'assegnazione dell'ordine d'aquisto.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>893dbaf897742dd0898cb4b0f053af80</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>813dbaf897742dd0898cb4b0f053af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Richiesta n. {{Created_1.current.number}} chiusa</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>893dbaf897742dd0898cb4b0f053af80</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>453dbaf897742dd0898cb4b0f053af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=893dbaf897742dd0898cb4b0f053af80^sys_idNOT IN0d3dbaf897742dd0898cb4b0f053af81"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_webhook_url</input_name>
+        <instance>893dbaf897742dd0898cb4b0f053af80</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_webhook_url":{"scriptActive":false}}</script>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>0d3dbaf897742dd0898cb4b0f053af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=893dbaf897742dd0898cb4b0f053af80"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>9</order>
+        <parent_ui_id>3d0120c3-fc1e-4dda-ad4a-95d4a3aba408</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>b704c37497f42dd0898cb4b0f053af9b</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>76868266-7b1d-45fa-a8f0-cfc195f11551</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b704c37497f42dd0898cb4b0f053af9b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b704c37497f42dd0898cb4b0f053af9b</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7704c37497f42dd0898cb4b0f053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <value>Scarica QUI il certificato</value>
+        <variable display_value="Action Name">859822431324030039a039ed9344b0f7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b704c37497f42dd0898cb4b0f053af9b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>b304c37497f42dd0898cb4b0f053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <value>https://servicenow.webhook.office.com/webhookb2/4ac0d0f6-1ff8-4aae-81a1-9afd3ee4c916@8bcff170-9979-491e-8683-d8ced0850bad/IncomingWebhook/d775f081b23e48c4a15763f74f1d281a/086efc19-7cdb-49a2-a60b-d13866c06a0d</value>
+        <variable display_value="Webhook URL">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b704c37497f42dd0898cb4b0f053af9b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>ff04c37497f42dd0898cb4b0f053af9d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <value/>
+        <variable display_value="Action URL">349822431324030039a039ed9344b0df</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b704c37497f42dd0898cb4b0f053af9b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>b704c37497f42dd0898cb4b0f053af9b</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7f04c37497f42dd0898cb4b0f053af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>b704c37497f42dd0898cb4b0f053af9b</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>f704c37497f42dd0898cb4b0f053af9d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>https://lucatokyodemo.service-now.com/ecdemo?id=ticket&amp;is_new_order=true&amp;table=x_snc_modulo_ant_0_antimafia&amp;sys_id={{Created_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>b704c37497f42dd0898cb4b0f053af9b</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7304c37497f42dd0898cb4b0f053af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Ciao, abbiamo trovato il nullaosta Antimafia per il fornitore {{Created_1.current.company.name}} nell'archivio ancora in corso di validità.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>b704c37497f42dd0898cb4b0f053af9b</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>3704c37497f42dd0898cb4b0f053af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Ecco il certificato Antimafia richiesto per il supplier {{Created_1.current.company.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>b704c37497f42dd0898cb4b0f053af9b</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>bb04c37497f42dd0898cb4b0f053af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b704c37497f42dd0898cb4b0f053af9b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b704c37497f42dd0898cb4b0f053af9b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>10</order>
+        <parent_ui_id>3d0120c3-fc1e-4dda-ad4a-95d4a3aba408</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>d75dcffc97382dd0898cb4b0f053af2c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>b8ade21b-7c90-4ec1-94d9-e24e3d44dab9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d75dcffc97382dd0898cb4b0f053af2c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d75dcffc97382dd0898cb4b0f053af2c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:46:00</sys_created_on>
+        <sys_id>3f8d0b3097782dd0898cb4b0f053afb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:46:00</sys_updated_on>
+        <value>manuel.giacobbe@servicenow.com</value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d75dcffc97382dd0898cb4b0f053af2c</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:47:40</sys_created_on>
+        <sys_id>8cfd4b7097782dd0898cb4b0f053af0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:47:40</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d75dcffc97382dd0898cb4b0f053af2c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>d35dcffc97382dd0898cb4b0f053af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <value>x_snc_modulo_ant_0_antimafia</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d75dcffc97382dd0898cb4b0f053af2c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d75dcffc97382dd0898cb4b0f053af2c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:47:40</sys_created_on>
+        <sys_id>08fd4b7097782dd0898cb4b0f053af0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:47:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Ciao,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Al seguente link trovi il nullaosta richiesto:&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;https://lucatokyodemo.service-now.com/ecdemo?id=ticket&amp;amp;is_new_order=true&amp;amp;table=x_snc_modulo_ant_0_antimafia&amp;amp;sys_id=&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:c2cfecca-f0b4-45b8-9799-01762369ec27}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:c2cfecca-f0b4-45b8-9799-01762369ec27}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; Antimafia Record &amp;gt; Sys ID"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Sys ID&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_c2cfecca-f0b4-45b8-9799-01762369ec27" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Grazie,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Team&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>d75dcffc97382dd0898cb4b0f053af2c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:46:00</sys_created_on>
+        <sys_id>b78d0b3097782dd0898cb4b0f053afb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:46:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d75dcffc97382dd0898cb4b0f053af2c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>535dcffc97382dd0898cb4b0f053af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Certificato Antimafia per fornitore {{Created_1.current.company.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d75dcffc97382dd0898cb4b0f053af2c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>1b5dcffc97382dd0898cb4b0f053af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d75dcffc97382dd0898cb4b0f053af2c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>db5dcffc97382dd0898cb4b0f053af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d75dcffc97382dd0898cb4b0f053af2c</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:45:09</sys_created_on>
+        <sys_id>9f5dcffc97382dd0898cb4b0f053af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:45:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d75dcffc97382dd0898cb4b0f053af2c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d75dcffc97382dd0898cb4b0f053af2c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>7</order>
+        <parent_ui_id>3d0120c3-fc1e-4dda-ad4a-95d4a3aba408</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 18:25:50</sys_created_on>
+        <sys_id>d7a6133097f82dd0898cb4b0f053af4d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>d34915e3-c90c-4ac7-83c1-2af21676a138</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d7a6133097f82dd0898cb4b0f053af4d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d7a6133097f82dd0898cb4b0f053af4d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 18:25:50</sys_created_on>
+        <sys_id>13a6133097f82dd0898cb4b0f053af50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <value>sys_attachment</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d7a6133097f82dd0898cb4b0f053af4d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>d7a6133097f82dd0898cb4b0f053af4d</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 18:25:50</sys_created_on>
+        <sys_id>d7a6133097f82dd0898cb4b0f053af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>table_sys_id={{2e6aae3b-452b-4706-91e6-543f0b319216.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>d7a6133097f82dd0898cb4b0f053af4d</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 18:25:50</sys_created_on>
+        <sys_id>9fa6133097f82dd0898cb4b0f053af4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d7a6133097f82dd0898cb4b0f053af4d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7a6133097f82dd0898cb4b0f053af4d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <order>6</order>
+        <parent_ui_id>3d0120c3-fc1e-4dda-ad4a-95d4a3aba408</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>ff04c37497f42dd0898cb4b0f053af89</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>e3bcb73d-b7db-4a73-82f8-bd153d7fcaf0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ff04c37497f42dd0898cb4b0f053af89"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff04c37497f42dd0898cb4b0f053af89</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>3f04c37497f42dd0898cb4b0f053af8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <value>state=7^work_notes=Richiesta chiusa automaticamente: il Certificato Antimafia richiesto è già presente nell'archivio ed è ancora valido per almeno 6 mesi.
+Il Nullaosta verrà inviato via mail/Teams a momenti.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ff04c37497f42dd0898cb4b0f053af89</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>ff04c37497f42dd0898cb4b0f053af8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <value>x_snc_modulo_ant_0_antimafia</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ff04c37497f42dd0898cb4b0f053af89"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>ff04c37497f42dd0898cb4b0f053af89</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>f704c37497f42dd0898cb4b0f053af8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ff04c37497f42dd0898cb4b0f053af89</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>3704c37497f42dd0898cb4b0f053af8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ff04c37497f42dd0898cb4b0f053af89</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>bb04c37497f42dd0898cb4b0f053af8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ff04c37497f42dd0898cb4b0f053af89"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ff04c37497f42dd0898cb4b0f053af89"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=49da3a7497742dd0898cb4b0f053af85^sys_idNOT IN7b04c37497f42dd0898cb4b0f053af50,c53dbaf897742dd0898cb4b0f053af65"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7304c37497f42dd0898cb4b0f053af50</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7b04c37497f42dd0898cb4b0f053af50</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>3d0120c3-fc1e-4dda-ad4a-95d4a3aba408</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7b04c37497f42dd0898cb4b0f053af50"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7b04c37497f42dd0898cb4b0f053af50</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>ff04c37497f42dd0898cb4b0f053af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <value>Nullaosta già esistente e ancora valido</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7b04c37497f42dd0898cb4b0f053af50"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7b04c37497f42dd0898cb4b0f053af50</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>7f04c37497f42dd0898cb4b0f053af53</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:06:12</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{2e6aae3b-452b-4706-91e6-543f0b319216.Record.expires_on}}&gt;{{fd_transform:8909dd99-7c21-48eb-8d9c-241ce73e8407}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>7b04c37497f42dd0898cb4b0f053af50</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>bb04c37497f42dd0898cb4b0f053af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7b04c37497f42dd0898cb4b0f053af50"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7b04c37497f42dd0898cb4b0f053af50"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">893dbaf897742dd0898cb4b0f053af64</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Antimafia auto-closed">49da3a7497742dd0898cb4b0f053af85</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>c53dbaf897742dd0898cb4b0f053af65</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:25:50</sys_updated_on>
+        <ui_id>5abb3bf3-8be0-476f-8d84-a5748202810b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c53dbaf897742dd0898cb4b0f053af65"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c53dbaf897742dd0898cb4b0f053af65</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>013dbaf897742dd0898cb4b0f053af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <value>Valore contratto sotto la soglia</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c53dbaf897742dd0898cb4b0f053af65"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c53dbaf897742dd0898cb4b0f053af65</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>8d3dbaf897742dd0898cb4b0f053af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.contract_value}}&lt;100000</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c53dbaf897742dd0898cb4b0f053af65</id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>853dbaf897742dd0898cb4b0f053af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c53dbaf897742dd0898cb4b0f053af65"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c53dbaf897742dd0898cb4b0f053af65"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=49da3a7497742dd0898cb4b0f053af85^sys_idNOT IN00fd4b7097782dd0898cb4b0f053af12,b704c37497f42dd0898cb4b0f053afa0,bf04c37497f42dd0898cb4b0f053af9f"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>49da3a7497742dd0898cb4b0f053af85</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_id}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:47:40</sys_created_on>
+        <sys_id>00fd4b7097782dd0898cb4b0f053af12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:47:40</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c2cfecca-f0b4-45b8-9799-01762369ec27</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>49da3a7497742dd0898cb4b0f053af85</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>8909dd99-7c21-48eb-8d9c-241ce73e8407</source_ui_id>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>b704c37497f42dd0898cb4b0f053afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <transform_compositions>[{"id":"43c11eb173733300b61e66476bf6a77f","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"duration","label":"Duration","order":0,"attributes":{},"value":"1970-06-30 00:00:00","type":"glide_duration","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add_time">b551d6b173733300b61e66476bf6a717</transform_definition_id>
+        <ui_id>98857b29-93c6-4306-9998-fee95d2b9c66</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>49da3a7497742dd0898cb4b0f053af85</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.sys_created_on}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 17:04:30</sys_created_on>
+        <sys_id>bf04c37497f42dd0898cb4b0f053af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 17:04:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8909dd99-7c21-48eb-8d9c-241ce73e8407</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_49da3a7497742dd0898cb4b0f053af85^sys_idNOT IN493dbaf897742dd0898cb4b0f053af5a,8d3dbaf897742dd0898cb4b0f053af5d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49da3a7497742dd0898cb4b0f053af85</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>493dbaf897742dd0898cb4b0f053af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_49da3a7497742dd0898cb4b0f053af85</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>manuel</sys_created_by>
+        <sys_created_on>2023-02-01 16:34:33</sys_created_on>
+        <sys_id>8d3dbaf897742dd0898cb4b0f053af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>manuel</sys_updated_by>
+        <sys_updated_on>2023-02-01 16:34:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=49da3a7497742dd0898cb4b0f053af85"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=49da3a7497742dd0898cb4b0f053af85"/>
+</record_update>

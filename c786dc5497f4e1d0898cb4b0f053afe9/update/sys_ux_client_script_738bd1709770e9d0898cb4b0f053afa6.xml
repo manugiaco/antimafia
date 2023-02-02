@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Vendor and Engagement Sidebar">638bd1709770e9d0898cb4b0f053af1f</macroponent>
+        <name>Create vendor sidebar</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+async function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const fields = [];
+
+    let vendor = api.data.get_vendor_details.output.data.GlideRecord_Query.core_company._results[0];
+    const emptyDesc = await helpers.translate('(empty)');
+
+    if (!vendor)
+        return;
+
+    const {
+        notes,
+        banner_image,
+        vendor_manager,
+        business_owners
+    } = vendor;
+
+    const {
+        orderedFields
+    } = api.state;
+
+    orderedFields.forEach(field => {
+        if (vendor[field] && vendor[field].displayValue) {
+            const {
+                label,
+                displayValue
+            } = vendor[field];
+
+            let value = displayValue;
+            if (field === "website") {
+                fields.push({
+                    label,
+                    "value": {
+                        "type": "text-link",
+                        "label": displayValue,
+                        "href": displayValue,
+                        "underlined": false,
+                        "target": "_blank"
+                    }
+                });
+                return;
+            }
+
+            if (field === "vendor_manager") {
+                value = `<div>${getVendorManagersHTML(vendor_manager)}</div>`;
+            }
+
+            if (field === "business_owners") {
+                value = `<div>${getVendorManagersHTML(business_owners)}</div>`;
+            }
+
+            fields.push({
+                label,
+                "value": {
+                    "type": "html",
+                    value
+                }
+            });
+        }
+    });
+
+    const address = getAddress(vendor);
+    const ADDRESS = await helpers.translate("Address");
+    if (address)
+        fields.push({
+            label: ADDRESS,
+            "value": {
+                "type": "html",
+                value: address
+            }
+        });
+
+    api.setState("description", notes.displayValue || emptyDesc);
+    api.setState("icon", banner_image.displayValue);
+    api.setState("fields", fields);
+
+    function getVendorManagersHTML(vendor_manager) {
+        if (!vendor_manager)
+            return;
+
+        const vendor_manager_names = vendor_manager.displayValue.split(',');
+        const output = [];
+        vendor_manager_names.forEach(manager => {
+            output.push(`<div>${manager}</div>`);
+        });
+
+        return output.join("");
+    }
+
+    function getAddress(vendor) {
+        const {
+            street,
+            city,
+            zip,
+            state
+        } = vendor;
+        if (street || city || state || zip)
+            return `<div><div>${street.displayValue ? street.displayValue : ""}</div>${city.displayValue ? city.displayValue + "," : ""} ${state.displayValue ?  state.displayValue + "," : ""} ${zip.displayValue ? zip.displayValue : ""}</div>`;
+        return "";
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 09:27:56</sys_created_on>
+        <sys_id>738bd1709770e9d0898cb4b0f053afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create vendor sidebar</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_client_script_738bd1709770e9d0898cb4b0f053afa6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 09:27:56</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Portale BDNA</name>
+        <specificity>10</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 13:57:52</sys_created_on>
+        <sys_id>7d595ab097bce9d0898cb4b0f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Portale BDNA</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_form_action_7d595ab097bce9d0898cb4b0f053af0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 13:57:52</sys_updated_on>
+        <table>x_snc_modulo_ant_0_richiesta_antimafia</table>
+        <ui_action display_value="Portale BDNA">1d091e7097bce9d0898cb4b0f053af50</ui_action>
+    </sys_ux_form_action>
+</record_update>

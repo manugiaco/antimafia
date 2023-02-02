@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Vendor and Engagement Sidebar">638bd1709770e9d0898cb4b0f053af1f</macroponent>
+        <name>Create engagement sidebar</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+async function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const resultsMap = api.data.get_engagement_details.result;
+    const emptyDesc = await helpers.translate('(empty)');
+
+    if (resultsMap) {
+        const {
+            orderedFieldsEngagement
+        } = api.state;
+
+        const fields = [];
+        orderedFieldsEngagement.forEach(field => {
+            var item = resultsMap[field];
+            if (item && item.displayValue) {
+                let value = item.displayValue;
+
+                if (item.internalType === "glide_list")
+                    if (value.includes(","))
+                        value = "<div>" + value.replaceAll(",", " <br>") + "</div>";
+
+                fields.push({
+                    "label": item.label,
+                    "value": {
+                        "type": "html",
+                        "value": value
+                    }
+                });
+            }
+        });
+        api.setState("fieldsEngagement", fields);
+        api.setState("descriptionEngagement", resultsMap["notes"].value || emptyDesc);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 09:27:56</sys_created_on>
+        <sys_id>778bd1709770e9d0898cb4b0f053af78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create engagement sidebar</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_client_script_778bd1709770e9d0898cb4b0f053af78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 09:27:56</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

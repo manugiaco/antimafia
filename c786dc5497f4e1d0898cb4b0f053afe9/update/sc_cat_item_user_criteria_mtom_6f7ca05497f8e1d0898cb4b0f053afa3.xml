@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Richiesta del Certificato Antimafia">aa822c949778e1d0898cb4b0f053af93</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-30 16:45:20</sys_created_on>
+        <sys_id>6f7ca05497f8e1d0898cb4b0f053afa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Richiesta del Certificato Antimafia.All Users</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_6f7ca05497f8e1d0898cb4b0f053afa3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-30 16:45:20</sys_updated_on>
+        <user_criteria display_value="All Users">aa60569553b30110e003ddeeff7b12f0</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>

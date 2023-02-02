@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Authority document side bar">4c1c59349770e9d0898cb4b0f053af69</macroponent>
+        <name>clickTree</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    const eventName = event.name;
+    var navigationPayload = {};
+
+    if (eventName == 'NOW_CONTENT_TREE#ACTIONABLE_ITEM_CLICKED')
+    {
+        navigationPayload = {
+            route: 'record',
+            fields: {
+                table: 'sn_grc_taxonomy_internal_taxonomy',
+                sysId: event.payload.item.id
+            },
+        };
+    }
+    api.emit("NAV_ITEM_SELECTED", navigationPayload);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 09:30:09</sys_created_on>
+        <sys_id>dc1c59349770e9d0898cb4b0f053afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>clickTree</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_client_script_dc1c59349770e9d0898cb4b0f053afd8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 09:30:09</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

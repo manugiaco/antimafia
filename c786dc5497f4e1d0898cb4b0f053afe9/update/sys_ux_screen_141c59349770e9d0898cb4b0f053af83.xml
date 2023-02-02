@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Modulo Antimafia Config">75aef1a0cbf029d0b360460997fd43db</app_config>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="Authority document side bar">4c1c59349770e9d0898cb4b0f053af69</macroponent>
+        <macroponent_config>{
+  "sysId" : "@context.props.sysId",
+  "table" : "@context.props.table",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>Authority document side bar</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record Default Copy">1b0b957c9730e9d0898cb4b0f053af5b</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition>parent.table=sn_compliance_authority_document^parent.sysId!=-1</screen_condition>
+        <screen_type display_value="Authority document sidebar">7d0c15349770e9d0898cb4b0f053af2f</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 09:30:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>141c59349770e9d0898cb4b0f053af83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authority document side bar</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sys_ux_screen_141c59349770e9d0898cb4b0f053af83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 09:30:09</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=141c59349770e9d0898cb4b0f053af83"/>
+</record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_snc_modulo_ant_0_antimafia</collection>
+        <condition table="x_snc_modulo_ant_0_antimafia">contract_value&lt;javascript:global.getCurrencyFilter('x_snc_modulo_ant_0_antimafia','contract_value','EUR;100000')<item endquery="false" field="contract_value" goto="false" newquery="false" operator="&lt;" or="false" value="javascript:global.getCurrencyFilter('x_snc_modulo_ant_0_antimafia','contract_value','EUR;100000')"/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description>Contratto sotto la soglia per richiedere il certificato Antimafia. La richiesta si chiuderà automaticamente.</description>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<br><hr><br>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name/>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>${opened_by.title} ${opened_by.name},</p>
+<p>La sua richiesta numero ${number} &egrave; stata automaticamente chiusa poich&eacute; non necessaria per il proseguimento dell'ordine.</p>
+<p>La soglia minima dell'ordine per la richiesta di un certificato Antimafia non &egrave; stata raggiunta, pertanto pu&ograve; procedere con l'assegnazione dell'ordine d'acquisto.</p>
+<p>&nbsp;</p>
+<p>Cordialmente,</p>
+<p>Vendor Qualification Team</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Contratto sotto la soglia</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>opened_by</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>La sua richiesta n. ${number} è stata chiusa: valore dell'ordine inferiore alla soglia</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-01 15:57:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>41a17e3497f02dd0898cb4b0f053afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contratto sotto la soglia</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>sysevent_email_action_41a17e3497f02dd0898cb4b0f053afa6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-01 15:57:20</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

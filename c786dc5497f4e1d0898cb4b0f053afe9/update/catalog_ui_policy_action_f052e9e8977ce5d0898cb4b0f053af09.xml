@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Richiesta del Certificato Antimafia">aa822c949778e1d0898cb4b0f053af93</catalog_item>
+        <catalog_variable>IO:5c99645c97b8e1d0898cb4b0f053af2a</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-31 15:19:01</sys_created_on>
+        <sys_id>f052e9e8977ce5d0898cb4b0f053af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>address_vendor</sys_name>
+        <sys_package display_value="Modulo Antimafia" source="x_snc_modulo_ant_0">c786dc5497f4e1d0898cb4b0f053afe9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Modulo Antimafia">c786dc5497f4e1d0898cb4b0f053afe9</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_f052e9e8977ce5d0898cb4b0f053af09</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-01-31 15:19:01</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Make 'address_vendor' visible depending on 'vendor'">ad4229e8977ce5d0898cb4b0f053af7a</ui_policy>
+        <variable>address_vendor</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
